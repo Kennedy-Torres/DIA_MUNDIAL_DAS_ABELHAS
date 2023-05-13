@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O universo das abelhas</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+
+        body{
+            margin: 0 auto; /*Centralizacao, o site fica sem borda nenhuma*/
+            padding: 0; /*todos os elementos teram padding zero, sendo necessario especificar cada um*/
+            box-sizing: border-box; /*reduz a quebra de layout, faz o incremento...*/
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-image: url(plano_de_fundo.jpg);
+        }
+
+        #menu-h{
+            list-style-type: none; /*Retira todos os bullets*/
+            padding: 0;
+            background-color: rgba(221, 174, 19, 0.753);
+        }
+
+        #menu-h li{
+            display: inline;/*Ficam um ao lado do outro*/
+            padding: 30px;
+        }
+
+        #menu-h li a{ /*para cada link*/
+            color: #fff;
+            padding: 20px; /*espacamento entre as letras*/
+            display: inline-block;
+            text-decoration: none; /*retira as decoracoes... no caso aqui... os underline*/
+            transition: background .4s;
+        }
+
+        #menu-h li a:hover{
+            background-color: lightgray;
+        }
+
+        #menu-h li:last-child a{
+            float: right;
+            background-color: rgb(201, 198, 45);
+        }
+
+        #menu-h li img{
+            max-height: 20;
+            max-width: 20;
+            /*width: auto;
+            height: auto;*/
+            position: absolute;
+            margin-left: -20px;
+            margin-top: 3px;
+            text-decoration: underline;
+            
+        }
+
+        #Titulo{
+            font-family: 'Fredericka the Great', cursive;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            padding: 0 3rem;
+            background-color: rgba(255, 72, 0, 0.678);
+        }
+
+        #Titulo h1{
+            font-weight: 200;
+            margin: 0.4rem;
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+
+    <ul id="menu-h"> <!--com o ID eu posso especificar com qual eu elemento eu posso trabalhar-->
+        <li class="logo">
+            <img src="abelha_logo.png" width="70px" height="50px">
+        </li>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">SOBRE</a></li>
+        <li><a href="#">CONTATO</a></li>
+        
+    </ul>
+
+    <div style="border-style:double; margin:20px;" id="Titulo">
+
+        <h1 style="color: rgb(255, 251, 1)">Bem Vindo! Ao Mundo das abelhas. <span class="txt-type" data-wait="2500" data-words='["Website?", "Designer?", "Photographer?"]'></span><i class="fas fa-pencil-alt"></i></h1>
+
+    </div>
+
+
+
+
+    
+</body>
+
+
+
+
+
+
+
+
+</html>
