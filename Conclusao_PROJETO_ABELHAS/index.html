@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O universo das abelhas</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+
+        body{
+            margin: 0 auto; /*Centralizacao, o site fica sem borda nenhuma*/
+            padding: 0; /*todos os elementos teram padding zero, sendo necessario especificar cada um*/
+            box-sizing: border-box; /*reduz a quebra de layout, faz o incremento...*/
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-image: url(plano_de_fundo.jpg);
+            height: 100px;
+        }
+
+        #menu-h{
+            list-style-type: none; /*Retira todos os bullets*/
+            padding: 0;
+            background-color: rgba(221, 174, 19, 0.753);
+            /*position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+        */
+        }
+
+        #menu-h li{
+            display: inline;/*Ficam um ao lado do outro*/
+            padding: 30px;
+        }
+
+        #menu-h li a{ /*para cada link*/
+            color: #fff;
+            padding: 20px; /*espacamento entre as letras*/
+            display: inline-block;
+            text-decoration: none; /*retira as decoracoes... no caso aqui... os underline*/
+            transition: background .4s;
+        }
+
+        #menu-h li a:hover{
+            background-color: lightgray;
+        }
+
+        #menu-h li:last-child a{
+            float: right;
+            background-color: rgb(201, 198, 45);
+        }
+
+        #menu-h li img{
+            max-height: 20;
+            max-width: 20;
+            /*width: auto;
+            height: auto;*/
+            position: absolute;
+            margin-left: -20px;
+            margin-top: 3px;
+            text-decoration: underline;
+            
+        }
+
+        #Titulo{
+            font-family: 'Fredericka the Great', cursive;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            padding: 0 3rem;
+            background-color: rgba(255, 72, 0, 0.678);
+        }
+
+        #Titulo h1{
+            font-weight: 200;
+            margin: 0.4rem;
+        }
+
+
+        main{
+            height: 76vh;
+            color: rgb(255, 255, 255);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #sintaxe{
+            color: rgb(241, 227, 21);
+            border-style: double ;
+            background-color: rgba(255, 72, 0, 0.678);
+            font-size: small;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+
+        #sintaxe li{
+            list-style-type: none;
+         
+        }
+
+        .conteiner1{
+            margin: 30px;
+            background-color: orange;
+            border-style: solid;
+            padding: 20px;
+        }
+
+        .conteiner2{
+            margin: 30px;
+            background-color: orange;
+            border-style: solid;
+            padding: 20px;
+        }
+
+        .conteiner3{
+            margin: 30px;
+            background-color: orange;
+            border-style: solid;
+            padding: 20px;
+        }
+
+        .footer{
+            font-size: 30px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            display: flex;
+            justify-content:center;
+            /*align-items: center;*/
+            height: 13vh; /*tamanho do rodape*/
+            background-color: rgb(241, 227, 21);
+            color: rgb(248, 135, 6);
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+    
+        <ul id="menu-h"> <!--com o ID eu posso especificar com qual eu elemento eu posso trabalhar-->
+            <li class="logo">
+                <img src="abelha_logo.png" width="70px" height="50px">
+            </li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#contato">AGRADECIMENTOS</a></li>
+            
+        </ul>
+    
+    <div style="border-style:double; margin:20px ;" id="Titulo">
+
+        <h1 style="color: rgb(255, 251, 1)">20 DE MAIO! DIA MUNDIAL DAS ABELHAS. <span class="txt-type" data-wait="2500" data-words='["Website?", "Designer?", "Photographer?"]'></span><i class="fas fa-pencil-alt"></i></h1>
+
+    </div>
+
+    <main>
+        <div id="sintaxe">
+            <p style="margin:10px;">Iremos falar sobre:</p>
+            <ul>
+                <li><a href="#topico1">1-As abelhas ajudam a garantir a vida no planeta</a></li>
+                <li><a href="#topico2">2-Abelhas são parceiras da agricultura</a></li>
+                <li><a href="#topico3">3-AS Abelhas não produzem só mel</a></li>
+            </ul>
+        </div>
+
+        <a name="topico1"></a><br>
+        <div class="conteiner1">
+            <h1>1-Elas ajudam a garantir a vida no planeta</h1>
+            As abelhas prestam um serviço fundamental para a humanidade e a biodiversidade, pois são responsáveis pela polinização de aproximadamente 73% das plantas no mundo. “As abelhas garantem a variação genética tão importante ao desenvolvimento e reprodução das plantas e, com isso, garantem o equilíbrio dos ecossistemas e que existam plantas suficientes para a produção de oxigênio. São ainda consideradas um importante bioindicador da qualidade do meio ambiente”, acrescenta Ana Bueno, bióloga da ONG Bee or not to Be<br><br>
+            <img style="margin-left: 35%" src="mundo_abelha.jpg">
+
+        </div> 
+
+        <a name="topico2"></a><br>
+        <div class="conteiner2"> 
+            <h1>2-Elas são parceiras da agricultura</h1>
+            Sem polinização, não temos produção de alimentos. Em Santa Catarina, o impacto econômico da apicultura vai muito além da produção de mel. Ele se reflete no ganho de produtividade de culturas como maçã, pera e ameixa, graças ao trabalho de polinização das abelhas. As abelhas também são indispensáveis para a produção de alimentos. Mais de 3/4 das espécies utilizadas pelo homem na agricultura dependem da polinização para uma produção de qualidade e quantidade significativas. <br><br>
+            <img style="margin-left: 35%;" src="abelhaaa.jpg"><br><br>
+            “No mundo, estima-se que os serviços ecossistêmicos da polinização correspondam a cerca de 10% do PIB agrícola, representando mais de 200 bilhões de dólares ao ano”, afirma Daniel Malusá. <br><br>
+            Também de acordo com a FAO, 70% das culturas agrícolas dependem dos polinizadores. A polinização das abelhas é fundamental para garantir a alta produtividade e a qualidade dos frutos em diversas culturas agrícolas. Como exemplo, um levantamento encomendado pelo Departamento de Agricultura dos Estados Unidos indicou que 100% das espécies de amêndoas, 90% das maçãs e mirtilos, 48% dos pêssegos, 27% das laranjas, 16% do algodão e 5% da soja dependem das ações das abelhas para prosperar. Isso, só para citar alguns alimentos consumidos pelos humanos. 
+
+        </div> 
+
+        <a name="topico3"></a><br>
+        <div class="conteiner3"> 
+            <h1>3-Abelha não produz só mel</h1>
+            Criar abelhas ainda se destina à produção de própolis, pólen, geleia real e apitoxina. Esses produtos servem de matéria-prima para as indústrias farmacêuticas, alimentícias e cosméticas e geram renda para milhares de famílias apicultoras.<br><br>
+            <img style="margin-left: 15%;height: 183px;" src="propolis.jpg">
+            <img src="geleia real.jpg">
+            <img src="apitoxina.jpg"><br>
+            <p> O própolis é um produto elaborado pelas abelhas a partir de substâncias resinosas coletadas em brotos, flores, folhas e cascas de plantas. A estas substâncias, as abelhas adicionam secreções salivares, cera e pólen para obter esse hormônio natural. De forma geral, as abelhas raspam as substâncias resinosas encontradas nas várias partes da planta com a mandíbula e manipulam com as patas, acondicionando-as nas corbículas.</p><br><br><br>
+            Nesse processo, elas acrescentam secreções salivares e grãos de pólen a elas. Na colmeia, a resina é retirada da corbícula e manipulada com adição de cera, mais secreções salivares e eventualmente mais pólen. O própolis é fundamental e imprescindível na higienização do interior da colmeia, assim como na vedação de aberturas externas, eliminação de espaços indesejáveis e não transitáveis, renovação constante de película protetora nos favos de postura e depósito de alimentos.
+
+
+        </div> 
+
+        <div class="footer"><a name="contato">OBRIGADO PELA OPORTUNIDADE.<br> Produzido por: Kennedy Torres!!</a><br><br>
+        
+        </div>
+    
+    </main>
+
+   
+        
+
+
+    
+
+    
+</body>
+
+
+
+
+
+
+
+
+</html>
